@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Григорьев Артём — Сайт-визитка</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <a href="#welcome" class="header__logo">AG</a>
+
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#welcome" class="menu__link">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a href="#about" class="menu__link">Обо мне</a>
+        </li>
+        <li class="menu__item">
+          <a href="#hobbies" class="menu__link">Мои увлечения</a>
+        </li>
+        <li class="menu__item">
+          <a href="#gallery" class="menu__link">Галерея</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contacts" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button class="header__burger-button" id="burgerBtn" type="button" aria-label="Меню">
+        <span class="header__burger-button-line"></span>
+        <span class="header__burger-button-line"></span>
+        <span class="header__burger-button-line"></span>
+      </button>
+
+      <nav class="header__labs-menu labs-menu" id="labsMenu">
+        <p class="labs-menu__title">Разделы страницы</p>
+        <ul class="labs-menu__list labs-menu__list--mobile-nav">
+          <li class="labs-menu__item"><a href="#welcome" class="labs-menu__link">Главная</a></li>
+          <li class="labs-menu__item"><a href="#about" class="labs-menu__link">Обо мне</a></li>
+          <li class="labs-menu__item"><a href="#hobbies" class="labs-menu__link">Мои увлечения</a></li>
+          <li class="labs-menu__item"><a href="#gallery" class="labs-menu__link">Галерея</a></li>
+          <li class="labs-menu__item"><a href="#contacts" class="labs-menu__link">Контакты</a></li>
+        </ul>
+
+        <p class="labs-menu__title">Лабораторные работы</p>
+        <ul class="labs-menu__list">
+          <li class="labs-menu__item">
+            <a href="lab2/lab2.html" class="labs-menu__link">Лабораторная работа №2</a>
+          </li>
+          <li class="labs-menu__item">
+            <a href="lab3/lab3.html" class="labs-menu__link">Лабораторная работа №3</a>
+          </li>
+          <li class="labs-menu__item">
+            <a href="lab6/lab6.html" class="labs-menu__link">Лабораторная работа №6</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="welcome" id="welcome">
+      <div class="welcome__container">
+        <div class="welcome__text-container">
+          <h1 class="welcome__title">Григорьев Артём Анатольевич</h1>
+          <p class="welcome__description">Студент 3-го курса Прикладной информатики СПбПУ</p>
+          <div class="welcome__buttons">
+            <a href="#about" class="welcome__button welcome__button--primary">Обо мне</a>
+            <a href="#hobbies" class="welcome__button welcome__button--secondary">Мои увлечения</a>
+          </div>
+        </div>
+        <img class="welcome__photo" src="./images/myphoto.jpg" alt="Фото Григорьева Артёма Анатольевича">
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__container">
+        <h2 class="section-title">Обо мне</h2>
+        <p class="section-subtitle">Мой путь в программировании со школы до учебы в университете и веб-разработки</p>
+
+        <article class="about__article clearfix">
+          <h3 class="about__heading">Начало пути и школьные проекты</h3>
+          <img class="about__float-image about__float-image--left" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Ноутбук с кодом">
+          <p class="about__text">
+            Учиться программированию я начал еще в школе. С 8 класса я регулярно ходил на курсы по программированию в Санкт-Петербургском политехническом университете Петра Великого (СПбПУ), где познакомился с базовыми алгоритмами, логикой построения программ и основами написания кода. Эти занятия помогли мне заранее определиться с будущей специальностью и дали хорошую стартовую базу перед поступлением в вуз.
+          </p>
+          <p class="about__text">
+            В 11 классе я вместе со своей командой принял участие в хакатоне по программированию, где мы заняли 1 место в кейсе «Программа перевода видео на Python». Работа над этим проектом дала мне отличный опыт решения прикладных задач в сжатые сроки, распределения ролей внутри команды и доведения идеи до рабочего прототипа.
+          </p>
+        </article>
+
+        <article class="about__article clearfix">
+          <h3 class="about__heading">Обучение в СПбПУ и командная разработка</h3>
+          <img class="about__float-image about__float-image--right" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Рабочее место разработчика">
+          <p class="about__text">
+            Сейчас я учусь на 3-м курсе направления «Прикладная информатика» в СПбПУ. В процессе обучения в вузе я изучил базы данных, язык запросов SQL, программирование на C# и C++, а также основы тестирования программного обеспечения. Например, в рамках учебы на языке C++ я написал полноценное десктопное приложение для заметок с использованием фреймворка Qt, проработав как внутреннюю логику хранения записей, так и графический интерфейс пользователя.
+          </p>
+          <p class="about__text">
+            Кроме того, я был frontend-разработчиком в команде по проекту AI Test Agent — это платформа автоматизации тестирования с ИИ-агентами. В этом проекте я отвечал за клиентскую часть и удобство интерфейса, взаимодействуя с другими участниками разработки.
+          </p>
+        </article>
+
+        <article class="about__article clearfix">
+          <h3 class="about__heading">Опыт в веб-разработке и фрилансе</h3>
+          <img class="about__float-image about__float-image--left" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Верстка сайта в редакторе кода">
+          <p class="about__text">
+            Долгое время я самостоятельно изучаю веб-разработку, и непосредственно фронтендом я занимаюсь уже полтора года. За это время я выполнил несколько коммерческих заказов на фрилансе, а также помогал в разработке многостраничного сайта для компании моего дяди — Rhombus House. Работа над реальными сайтами научила меня аккуратной верстке и вниманию к тому, как страница открывается на разных устройствах.
+          </p>
+          <p class="about__text">
+            В работе со страницами я использую стек HTML5, CSS3 и JavaScript, придерживаюсь методологии БЭМ для понятного именования классов и настраиваю адаптивный дизайн для компьютеров, планшетов и смартфонов.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="hobbies" id="hobbies">
+      <div class="hobbies__container">
+        <h2 class="section-title">Мои увлечения</h2>
+        <p class="section-subtitle">Чем я занимаюсь в свободное от учебы и написания кода время</p>
+
+        <div class="hobbies__grid">
+          <article class="hobbies__card">
+            <div class="hobbies__image-wrapper">
+              <img class="hobbies__image" src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTJGrK-7FsZRZys_pqSq_vC918on_df8EU0eUkSS7OAmZ4I5ZiE6kUXE-EEsv2XFu9GRQpStsfo47vPJeQ" alt="Спиннинг на берегу реки">
+            </div>
+            <div class="hobbies__content">
+              <h3 class="hobbies__card-title">Рыбалка на спиннинг</h3>
+              <p class="hobbies__card-text">
+                Одно из моих главных увлечений на природе — береговая рыбалка на спиннинг и джиг. Люблю выбираться к воде на набережные Невы в Санкт-Петербурге, на реку Ижору, Вуоксу или озеро Зеркальное. Это отличный способ отдохнуть от экрана компьютера на свежем воздухе.
+              </p>
+            </div>
+          </article>
+
+          <article class="hobbies__card">
+            <div class="hobbies__image-wrapper">
+              <img class="hobbies__image" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Гантели для силовых тренировок">
+            </div>
+            <div class="hobbies__content">
+              <h3 class="hobbies__card-title">Силовые тренировки</h3>
+              <p class="hobbies__card-text">
+                Регулярно занимаюсь силовыми тренировками три-четыре раза в неделю со свободными весами и на турниках. Стараюсь придерживаться режима, слежу за питанием и прогрессом в упражнениях, чтобы поддерживать хорошую физическую форму.
+              </p>
+            </div>
+          </article>
+
+          <article class="hobbies__card">
+            <div class="hobbies__image-wrapper">
+              <img class="hobbies__image" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTsq3CpEQq0phQs7R59kNU1n9MLoIdF2rOlsm9kwYOGxjAZNypYVI8Jx5h7I0agEL2IEErmy-edaSAJNlE" alt="Футбольный мяч на газоне стадиона">
+            </div>
+            <div class="hobbies__content">
+              <h3 class="hobbies__card-title">Футбол</h3>
+              <p class="hobbies__card-text">
+                Внимательно слежу за европейским и российским футболом, смотрю матчи таких клубов, как «Манчестер Сити», «Арсенал», «Боруссия Дортмунд» и петербургский «Зенит». Интересуюсь командной статистикой и тактикой игры.
+              </p>
+            </div>
+          </article>
+
+          <article class="hobbies__card">
+            <div class="hobbies__image-wrapper">
+              <img class="hobbies__image" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80" alt="Компьютер для игр">
+            </div>
+            <div class="hobbies__content">
+              <h3 class="hobbies__card-title">Компьютерные игры</h3>
+              <p class="hobbies__card-text">
+                В свободные вечера люблю поиграть с друзьями на ПК в командные соревновательные игры, например в Dota 2, а также в гоночные симуляторы вроде Assetto Corsa.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Четвертая секция: Галерея (Изображения №9 и №10) -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__container">
+        <h2 class="section-title">Галерея</h2>
+        <p class="section-subtitle">Город, в котором я учусь, и повседневное программирование</p>
+
+        <div class="gallery__grid">
+          <figure class="gallery__item">
+            <img class="gallery__image" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSygbkQ-RMUbkU4yYqmCQHWRQU8dfEdxAcmlsZi252dskHLn-VZH3a6keKVkBFFgz6B9G6vjYrW4knoFmE" alt="Панорама набережной Невы в Санкт-Петербурге">
+            <figcaption class="gallery__caption">
+              <strong>Санкт-Петербург.</strong> Город, в котором я живу и учусь в Политехе. Прогулки по набережным Невы помогают переключиться и отдохнуть после учебных будней.
+            </figcaption>
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Код программы на мониторе">
+            <figcaption class="gallery__caption">
+              <strong>Написание кода.</strong> Мне нравится разбираться в том, как устроены программы и веб-сайты изнутри, изучать новые языки программирования и видеть на экране готовый результат своей работы.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="footer" id="contacts">
+    <div class="footer__container">
+      <div class="footer__info">
+        <a href="#welcome" class="header__logo">AG</a>
+        <p class="footer__description">
+          Сайт-визитка студента 3-го курса направления «Прикладная информатика» СПбПУ Григорьева Артёма Анатольевича.
+        </p>
+      </div>
+
+      <div class="footer__nav">
+        <h3 class="footer__heading">Разделы</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#welcome" class="footer__link">Главная</a></li>
+          <li class="footer__item"><a href="#about" class="footer__link">Обо мне</a></li>
+          <li class="footer__item"><a href="#hobbies" class="footer__link">Мои увлечения</a></li>
+          <li class="footer__item"><a href="#gallery" class="footer__link">Галерея</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contacts">
+        <h3 class="footer__heading">Контакты</h3>
+        <ul class="footer__list">
+          <li class="footer__item">г. Санкт-Петербург, СПбПУ</li>
+          <li class="footer__item">Email: <a href="mailto:artem.grigoriev@example.com" class="footer__link">artem.grigoriev@example.com</a></li>
+          <li class="footer__item">GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="footer__link">github.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2026 Григорьев Артём Анатольевич</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

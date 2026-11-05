@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Задание 2. Рисунок на CSS</title>
+  <link rel="stylesheet" href="pic.css">
+  <link rel="stylesheet" href="../header.css">
+</head>
+<body>
+   <header class="header" id="top">
+    <a href="../index.html" class="header__logo">AG</a>
+
+     <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <p>Лабораторная работа 2</p>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <button class="header__burger-button" id="burgerBtn" type="button" aria-label="Меню">
+        <span class="header__burger-button-line"></span>
+        <span class="header__burger-button-line"></span>
+        <span class="header__burger-button-line"></span>
+      </button>
+
+      <nav class="header__labs-menu labs-menu" id="labsMenu">
+        <p class="labs-menu__title">Разделы страницы</p>
+        <ul class="labs-menu__list labs-menu__list--mobile-nav">
+          <li class="labs-menu__item"><a href="#welcome" class="labs-menu__link">Главная</a></li>
+          <li class="labs-menu__item"><a href="#about" class="labs-menu__link">Обо мне</a></li>
+          <li class="labs-menu__item"><a href="#hobbies" class="labs-menu__link">Мои увлечения</a></li>
+          <li class="labs-menu__item"><a href="#gallery" class="labs-menu__link">Галерея</a></li>
+          <li class="labs-menu__item"><a href="#contacts" class="labs-menu__link">Контакты</a></li>
+        </ul>
+
+        <p class="labs-menu__title">Лабораторные работы</p>
+        <ul class="labs-menu__list">
+          <li class="labs-menu__item">
+            <a href="../lab2/lab2.html" class="labs-menu__link">Лабораторная работа №2</a>
+          </li>
+          <li class="labs-menu__item">
+            <a href="../lab3/lab3.html" class="labs-menu__link">Лабораторная работа №3</a>
+          </li>
+          <li class="labs-menu__item">
+            <a href="../lab6/lab6.html" class="labs-menu__link">Лабораторная работа №6</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main class="content">
+
+    <div class="conteiner">
+      <div class="dino-art">
+        <div class="branch"></div>
+        <div class="leaf leaf-1"></div>
+        <div class="leaf leaf-2"></div>
+        <div class="leaf leaf-3"></div>
+
+        <div class="grass-blade grass-blade-1"></div>
+        <div class="grass-blade grass-blade-2"></div>
+
+        <div class="dino-tail"></div>
+        <div class="dino-neck"></div>
+        <div class="dino-body"></div>
+
+        <div class="dino-head">
+          <div class="dino-eye dino-eye-1"></div>
+          <div class="dino-eye dino-eye-2"></div>
+          <div class="nostril-1"></div>
+          <div class="nostril-2"></div>
+          <div class="teeth">
+            <div class="tooth"></div>
+            <div class="tooth"></div>
+            <div class="tooth"></div>
+            <div class="tooth"></div>
+          </div>
+        </div>
+
+        <div class="dino-arm-1"></div>
+        <div class="dino-arm-2"></div>
+
+        <div class="dino-leg-1"></div>
+        <div class="dino-leg-2"></div>
+        <div class="dino-foot dino-foot-1"></div>
+        <div class="dino-foot dino-foot-2"></div>
+
+        <div class="ground"></div>
+      </div>
+    </div>
+    
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

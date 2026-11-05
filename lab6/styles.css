@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.lab-main {
+  padding: 30px 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4a3b2c;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 25px 35px;
+  background-color: #f4e7b4;
+  border: 2px solid #5a5243;
+}
+
+.question-btn {
+  background-color: #8f8466;
+  color: #3b3322;
+  border: 1px solid #6e654d;
+  padding: 4px 30px;
+  font-family: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.question-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.status-box {
+  display: none;
+  background-color: #f9f3dc;
+  border: 1px solid #b8ab82;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.quiz-area {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.question-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.question-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f3dc;
+  border: 1px solid transparent;
+  padding: 6px 15px;
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.question-block:hover,
+.answer-block:hover {
+  border: 3px solid #8f8466;
+}
+
+.question-block:active {
+  transform: scale(1.03);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.marker-correct {
+  color: #1ec71e;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.marker-wrong {
+  color: #e61919;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.answers-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.answer-block {
+  flex: 1;
+  background-color: #f9f3dc;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.answer-selected {
+  transform: scale(1.1);
+}
+
+.explanation {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #5c4b37;
+}
+
+.move-right {
+  transform: translateX(120vw);
+  opacity: 0;
+}
+
+.correct-info {
+  display: none;
+  background-color: #e6dec0;
+  border: 1px solid #8f8466;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+@media (max-width: 700px) {
+  .answers-row {
+    flex-direction: column;
+  }
+
+  .answer-block {
+    width: 100%;
+  }
+}

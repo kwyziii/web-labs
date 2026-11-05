@@ -1,0 +1,268 @@
+/* Заголовки секций */
+.section-title {
+  font-size: clamp(24px, 2.8vw, 36px);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  font-size: clamp(14px, 1.3vw, 18px);
+  font-weight: 300;
+  text-align: center;
+  color: #9ca3af;
+  max-width: 650px;
+  margin: 0 auto 36px;
+}
+
+/* Очистка потока для контейнеров с float */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Первая секция: Welcome */
+.welcome {
+  min-height: calc(100vh - 60px);
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  background-image: url('./images/фон.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-block: 40px;
+}
+
+.welcome__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 10%;
+}
+
+.welcome__text-container {
+  max-width: 560px;
+}
+
+.welcome__title {
+  font-size: clamp(24px, 2.5vw, 40px);
+  margin-bottom: 10px;
+}
+
+.welcome__description {
+  font-size: clamp(14px, 1.2vw, 18px);
+  color: #d1d5db;
+  margin-bottom: 24px;
+}
+
+.welcome__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.welcome__button {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.welcome__button--primary {
+  background-color: blue;
+  color: #ffffff;
+}
+
+.welcome__button--secondary {
+  background-color: #1f242a;
+  color: #ffffff;
+  border: 1px solid #374151;
+}
+
+.welcome__photo {
+  width: clamp(260px, 38vw, 500px);
+  height: clamp(260px, 38vw, 500px);
+  object-fit: cover;
+}
+
+/* Вторая секция: Обо мне (текст + картинки с float) */
+.about {
+  padding-block: 60px;
+  background-color: #0d0f12;
+}
+
+.about__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: 5%;
+}
+
+.about__article {
+  background-color: #15191e;
+  border: 1px solid #262c34;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.about__heading {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+/* Обтекание картинок текстом через свойство float */
+.about__float-image {
+  width: 280px;
+  height: 185px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.about__float-image--left {
+  float: left;
+  margin: 4px 20px 12px 0;
+}
+
+.about__float-image--right {
+  float: right;
+  margin: 4px 0 12px 20px;
+}
+
+.about__text {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #d1d5db;
+  margin-bottom: 12px;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
+}
+
+/* Третья секция: Мои увлечения */
+.hobbies {
+  padding-block: 60px;
+  background-color: #111418;
+}
+
+.hobbies__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: 5%;
+}
+
+.hobbies__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.hobbies__card {
+  background-color: #15191e;
+  border: 1px solid #262c34;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hobbies__image-wrapper {
+  height: 210px;
+}
+
+.hobbies__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hobbies__content {
+  padding: 20px;
+}
+
+.hobbies__card-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.hobbies__card-text {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+/* Четвертая секция: Галерея */
+.gallery {
+  padding-block: 60px 20px;
+  background-color: #0d0f12;
+}
+
+.gallery__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: 5%;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.gallery__item {
+  background-color: #15191e;
+  border: 1px solid #262c34;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.gallery__caption {
+  padding: 18px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+/* Адаптивность для планшетов и телефонов */
+@media (max-width: 900px) {
+  .welcome__container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-inline: 5%;
+  }
+
+  .welcome__buttons {
+    justify-content: center;
+  }
+
+  .hobbies__grid,
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about__float-image--left,
+  .about__float-image--right {
+    float: none;
+    width: 100%;
+    height: 200px;
+    margin: 0 0 14px 0;
+  }
+}
